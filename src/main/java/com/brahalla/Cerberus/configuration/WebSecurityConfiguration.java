@@ -1,10 +1,5 @@
 package com.brahalla.Cerberus.configuration;
 
-import com.brahalla.Cerberus.security.AuthenticationTokenFilter;
-import com.brahalla.Cerberus.security.EntryPointUnauthorizedHandler;
-import com.brahalla.Cerberus.security.TokenUtils;
-import com.brahalla.Cerberus.service.SecurityService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,6 +15,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.brahalla.Cerberus.security.AuthenticationTokenFilter;
+import com.brahalla.Cerberus.security.EntryPointUnauthorizedHandler;
+import com.brahalla.Cerberus.service.SecurityService;
 
 @Configuration
 @EnableWebSecurity
